@@ -1,0 +1,11 @@
+/* Program CLLE - przyjmuje parametr MSG */
+PGM        PARM(&MSG)
+
+/* Zmienne programu */
+DCL        VAR(&MSG) TYPE(*CHAR) LEN(50)
+
+/* Wyświetlenie komunikatu */
+SNDPGMMSG  MSG(&MSG) MSGTYPE(*INFO)
+
+/* Zakończenie programu */
+ENDPGM
